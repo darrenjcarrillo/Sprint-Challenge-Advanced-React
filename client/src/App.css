@@ -47,6 +47,10 @@
   justify-content: center;
 }
 
+.dark-mode-text {
+  margin-right: 1rem;
+}
+
 .dark-mode__toggle {
   background: papayawhip;
   border-radius: 50px;
@@ -58,7 +62,7 @@
 }
 
 .toggle {
-  background: #f68819;
+  background: #cd5c5c;
   border-radius: 50px;
   height: 18px;
   left: 0;
@@ -77,7 +81,7 @@
 }
 
 .dark-mode .player-container {
-  border: 1px solid grey;
+  border: 2px solid grey;
 }
 
 .display-container {
@@ -87,7 +91,7 @@
   justify-content: space-evenly;
 }
 .player-container {
-  border: 1px solid black;
+  border: 2px solid grey;
   width: 20%;
   margin-top: 2rem;
   border-radius: 2rem;

@@ -5,6 +5,7 @@ import Display from "./Display";
 class ClassComponent extends React.Component {
   constructor() {
     super();
+    this._isMounted = false;
     this.state = {
       data: []
     };
@@ -14,13 +15,15 @@ class ClassComponent extends React.Component {
     axios
       .get(`http://localhost:5000/api/players`)
       .then(res => {
-        console.log(`this is data`, res); // this is object
         this.setState({
           data: res.data
         });
-        console.log(this.state.data); // this is array
       })
       .catch(err => console.log(err));
+  }
+
+  componentWillUnmount() {
+    this._isMounted = false;
   }
 
   render() {
