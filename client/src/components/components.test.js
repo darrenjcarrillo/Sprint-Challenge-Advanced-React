@@ -1,12 +1,13 @@
 import React from "react";
 import { render, fireEvent } from "@testing-library/React";
-import ClassComponent from "./ClassComponent";
-import Display from "./Display";
+import ClassComponent, { Display } from "./ClassComponent";
+// import Display, from "./Display";
 import App from "../App";
 
-// test("this will render without crashing", () => {
-//   render(<Display />);
-// });
+test("this will render without crashing", () => {
+  render(<ClassComponent />);
+  Display;
+});
 
 test("I have a Players Text inside of Display component", () => {
   const { getByText } = render(<App />);
