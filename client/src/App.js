@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
+      <h1>Players</h1>
       <ClassComponent />
     </div>
   );
